@@ -26,16 +26,16 @@ client.on('ready', async () => {
     .setApplicationId('1208392776413220865')
     .setType('STREAMING')
     .setURL('https://www.twitch.tv/the_flixy15') //Must be a youtube video link 
-    .setState('Your State')
+    .setState('Might Be Afk')
     .setName('mrnekrozyt')
     .setDetails(`linktr.ee/flixy.ae [${formatTime()}]`)
     .setStartTimestamp(Date.now())
  .setAssetsLargeImage('https://cdn.discordapp.com/attachments/1164832441639379026/1207996512777404448/542E67BF-6022-463F-95FC-2D74ED6F5C33.gif?ex=65e1ad6c&is=65cf386c&hm=187b74e1e29b731b437c15ed275aa6caebb03d33118043849f3b0a292df52563&') //You can put links in tenor or discord and etc.
-    .setAssetsLargeText('Large Text') //Text when you hover the Large image
-    .setAssetsSmallImage('Small Image URL') //You can put links in tenor or discord and etc.
-    .setAssetsSmallText('Small Text') //Text when you hover the Small image
+    .setAssetsLargeText('My Time') //Text when you hover the Large image
+    .setAssetsSmallImage('https://c.tenor.com/TgKK6YKNkm0AAAAi/verified-verificado.gif') //You can put links in tenor or discord and etc.
+    .setAssetsSmallText('Insert Here') //Text when you hover the Small image
     .addButton('Join The Discord Server', 'https://discord.gg/obiwan')
-    .addButton('Youtube Channel', 'https://youtube.com');
+    .addButton('Subscribe To My Youtube Channel', 'https://youtube.com/@FlixyAE?si=RTvqZbwvT5E9Z3nI');
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "dnd" }); //dnd, online, idle, offline
