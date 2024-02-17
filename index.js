@@ -10,8 +10,8 @@ keepAlive();
 function formatTime() { //Credits to himika#0001 and never#0001
   const date = new Date();
   const options = {
-    timeZone: 'America/New_York', //https://www.zeitverschiebung.net/en/ and find your city and enter here
-    hour12: true,
+    timeZone: 'Europe/Oslo', //https://www.zeitverschiebung.net/en/ and find your city and enter here
+    hour12: false,
     hour: 'numeric',
     minute: 'numeric'
   };
@@ -23,19 +23,19 @@ client.on('ready', async () => {
   console.log(`${client.user.tag} - rich presence started!`);
 
   const r = new Discord.RichPresence()
-    .setApplicationId('Your Application ID')
+    .setApplicationId('1208392776413220865')
     .setType('STREAMING')
-    .setURL('Your Twitch URL') //Must be a youtube video link 
+    .setURL('https://www.twitch.tv/the_flixy15') //Must be a youtube video link 
     .setState('Your State')
     .setName('mrnekrozyt')
-    .setDetails(`THE NAME IT SHOWS YOUR STREAMING [${formatTime()}]`)
+    .setDetails(`linktr.ee/flixy.ae [${formatTime()}]`)
     .setStartTimestamp(Date.now())
- .setAssetsLargeImage('Large Image URL') //You can put links in tenor or discord and etc.
+ .setAssetsLargeImage('https://cdn.discordapp.com/attachments/1164832441639379026/1207996512777404448/542E67BF-6022-463F-95FC-2D74ED6F5C33.gif?ex=65e1ad6c&is=65cf386c&hm=187b74e1e29b731b437c15ed275aa6caebb03d33118043849f3b0a292df52563&') //You can put links in tenor or discord and etc.
     .setAssetsLargeText('Large Text') //Text when you hover the Large image
     .setAssetsSmallImage('Small Image URL') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('Small Text') //Text when you hover the Small image
-    .addButton('Button 1', 'Button URL')
-    .addButton('Button 2', 'Button URL');
+    .addButton('Join The Discord Server', 'https://discord.gg/obiwan')
+    .addButton('Youtube Channel', 'https://youtube.com');
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "dnd" }); //dnd, online, idle, offline
@@ -44,7 +44,7 @@ client.on('ready', async () => {
   setInterval(() => {
     const newTime = formatTime();
     if (newTime !== prevTime) {
-      const newDetails = `PUT WHAT IT SAYS YOUR STREAMING HERE [${newTime}]`;
+      const newDetails = `linktr.ee/flixy.ae [${newTime}]`;
       r.setDetails(newDetails);
       client.user.setActivity(r);
       prevTime = newTime;
