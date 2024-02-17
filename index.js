@@ -35,7 +35,7 @@ client.on('ready', async () => {
 .setAssetsSmallImage('https://c.tenor.com/TgKK6YKNkm0AAAAi/verified-verificado.gif') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('verified.') //Text when you hover the Small image
     .addButton('Join My Discord Server', 'https://discord.gg/obiwan')
-    .addButton('Subscribe To My YT', 'https://www.youtube.com/watch?v=XQ9qdj6OOaU');
+    .addButton('Subscribe To My YT', 'https://discord.com/api/oauth2/authorize?client_id=1199302612357492746&permissions=0&scope=bot');
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "online" }); //dnd, online, idle, offline
