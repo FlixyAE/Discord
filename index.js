@@ -15,7 +15,7 @@ function formatTime() { //Credits to himika#0001 and never#0001
     hour: 'numeric',
     minute: 'numeric'
   };
-  return new Intl.DateTimeFormat('en-US', options).format(date);
+  return new Intl.DateTimeFormat('en-US', options).format(date)
 }
 
 client.on('ready', async () => {
@@ -30,9 +30,9 @@ client.on('ready', async () => {
     .setName('Forreal')
     .setDetails(`Flare Discord Bot.`)
     .setStartTimestamp(Date.now())
-    .setAssetsLargeImage('https://media.discordapp.net/attachments/1139564276042965164/1139629624490475570/untitled15.png?width=426&height=426') //You can put links in tenor or discord and etc.
-    .setAssetsLargeText('Flare logo.') //Text when you hover the Large image
-.setAssetsSmallImage('https://media.discordapp.net/attachments/1139564276042965164/1139629624268181535/untitled14.png?width=426&height=426') //You can put links in tenor or discord and etc.
+    .setAssetsLargeImage('https://tenor.com/view/shadow-the-hedgehog-edgy-moon-cross-arms-teleport-gif-4917223') //You can put links in tenor or discord and etc.
+    .setAssetsLargeText('Sleep.') //Text when you hover the Large image
+.setAssetsSmallImage('https://c.tenor.com/TgKK6YKNkm0AAAAi/verified-verificado.gif') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('verified.') //Text when you hover the Small image
     .addButton('Invite No one', 'https://discord.gg/obiwan')
     .addButton('Subscribe To My YT', 'https://www.youtube.com/channel/UCNyMQIrAVUW5lS3t72fkKqQ/');
