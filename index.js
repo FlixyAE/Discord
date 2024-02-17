@@ -25,7 +25,7 @@ client.on('ready', async () => {
   const r = new Discord.RichPresence()
     .setApplicationId('1199302612357492746')
     .setType('STREAMING')
-    .setURL('https://twitch.tv/discord') //Must be a youtube video link 
+    .setURL('https://www.youtube.com/watch?v=XQ9qdj6OOaU') //Must be a youtube video link 
     .setState('Your State')
     .setName('mrnekrozyt')
     .setDetails(`linktr.ee/flixy.ae [${formatTime()}]`)
