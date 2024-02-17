@@ -28,13 +28,13 @@ client.on('ready', async () => {
     .setURL('https://www.twitch.tv/flare_discord') //Must be a youtube video link 
     .setState('AFK')
     .setName('Forreal')
-    .setDetails(`Flare Discord Bot.`)
+    .setDetails(`linktr.ee/flixy.ae.`)
     .setStartTimestamp(Date.now())
-    .setAssetsLargeImage('https://tenor.com/view/shadow-the-hedgehog-edgy-moon-cross-arms-teleport-gif-4917223') //You can put links in tenor or discord and etc.
+    .setAssetsLargeImage('https://media.discordapp.net/attachments/1164832441639379026/1207996512777404448/542E67BF-6022-463F-95FC-2D74ED6F5C33.gif?ex=65e1ad6c&is=65cf386c&hm=187b74e1e29b731b437c15ed275aa6caebb03d33118043849f3b0a292df52563&=') //You can put links in tenor or discord and etc.
     .setAssetsLargeText('Sleep.') //Text when you hover the Large image
 .setAssetsSmallImage('https://c.tenor.com/TgKK6YKNkm0AAAAi/verified-verificado.gif') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('verified.') //Text when you hover the Small image
-    .addButton('Invite No one', 'https://discord.gg/obiwan')
+    .addButton('Invite No one', 'https://discord.gg/obiwan/')
     .addButton('Subscribe To My YT', 'https://www.youtube.com/channel/UCNyMQIrAVUW5lS3t72fkKqQ/');
 
   client.user.setActivity(r);
