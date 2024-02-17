@@ -34,7 +34,7 @@ client.on('ready', async () => {
     .setAssetsLargeText('Large Text') //Text when you hover the Large image
     .setAssetsSmallImage('https://c.tenor.com/TgKK6YKNkm0AAAAi/verified-verificado.gif') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('Small Text') //Text when you hover the Small image
-    .addButton('Discord Server', 'discord.gg/obiwan')
+    .addButton('Discord Server', 'https://discord.gg/obiwan')
     .addButton('Youtube Channel', 'https://www.youtube.com/channel/UCNyMQIrAVUW5lS3t72fkKqQ');
 
   client.user.setActivity(r);
