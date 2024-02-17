@@ -25,26 +25,26 @@ client.on('ready', async () => {
   const r = new Discord.RichPresence()
     .setApplicationId('1199302612357492746')
     .setType('STREAMING')
-    .setURL('https://www.youtube.com/watch?v=XQ9qdj6OOaU') //Must be a youtube video link 
-    .setState('Your State')
-    .setName('mrnekrozyt')
-    .setDetails(`linktr.ee/flixy.ae [${formatTime()}]`)
+    .setURL('https://www.twitch.tv/flare_discord') //Must be a youtube video link 
+    .setState('Hosting')
+    .setName('Flare')
+    .setDetails(`Flare Discord Bot.`)
     .setStartTimestamp(Date.now())
- .setAssetsLargeImage('https://imgur.com/a/bq6uCib') //You can put links in tenor or discord and etc.
-    .setAssetsLargeText('Large Text') //Text when you hover the Large image
-    .setAssetsSmallImage('https://c.tenor.com/TgKK6YKNkm0AAAAi/verified-verificado.gif') //You can put links in tenor or discord and etc.
-    .setAssetsSmallText('Small Text') //Text when you hover the Small image
-    .addButton('Discord Server', 'https://discord.gg/obiwan')
-    .addButton('Youtube Channel', 'https://www.youtube.com/channel/UCNyMQIrAVUW5lS3t72fkKqQ');
+    .setAssetsLargeImage('https://media.discordapp.net/attachments/1139564276042965164/1139629624490475570/untitled15.png?width=426&height=426') //You can put links in tenor or discord and etc.
+    .setAssetsLargeText('Flare logo.') //Text when you hover the Large image
+.setAssetsSmallImage('https://media.discordapp.net/attachments/1139564276042965164/1139629624268181535/untitled14.png?width=426&height=426') //You can put links in tenor or discord and etc.
+    .setAssetsSmallText('verified.') //Text when you hover the Small image
+    .addButton('Invite Flare To Your Server', 'https://discord.com/api/oauth2/authorize?client_id=1136380915564687421&permissions=8&scope=applications.commands%20bot/')
+    .addButton('Github', 'https://github.com/Fady-GadE/');
 
   client.user.setActivity(r);
-  client.user.setPresence({ status: "dnd" }); //dnd, online, idle, offline
+  client.user.setPresence({ status: "online" }); //dnd, online, idle, offline
 
   let prevTime = null;
   setInterval(() => {
     const newTime = formatTime();
     if (newTime !== prevTime) {
-      const newDetails = `linktr.ee/flixy.ae [${newTime}]`;
+      const newDetails = `Flare Discord Bot.`;
       r.setDetails(newDetails);
       client.user.setActivity(r);
       prevTime = newTime;
@@ -52,5 +52,4 @@ client.on('ready', async () => {
   }, 1000); // Update every second
 });
 
-const mySecret = process.env['TOKEN'];
-client.login(mySecret);
+client.login(process.env['TOKEN']);
