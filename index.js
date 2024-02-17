@@ -34,7 +34,7 @@ client.on('ready', async () => {
     .setAssetsLargeText('Forreal.') //Text when you hover the Large image
 .setAssetsSmallImage('https://cdn.discordapp.com/emojis/1173090926080577706.gif'') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('verified.') //Text when you hover the Small image
-    .addButton('Subscribe To My Youtube', 'https://www.youtube.com/@FlixyAE/')
+    .addButton('Subscribe To My Youtube Channel', 'https://www.youtube.com/@FlixyAE/')
     .addButton('Join The Discord Server', 'https://discord.gg/obiwan');
 
   client.user.setActivity(r);
