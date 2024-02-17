@@ -11,7 +11,7 @@ function formatTime() { //Credits to himika#0001 and never#0001
   const date = new Date();
   const options = {
     timeZone: 'America/New_York', //https://www.zeitverschiebung.net/en/ and find your city and enter here
-    hour12: false,
+    hour12: true,
     hour: 'numeric',
     minute: 'numeric'
   };
