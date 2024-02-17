@@ -34,8 +34,8 @@ client.on('ready', async () => {
     .setAssetsLargeText('Flare logo.') //Text when you hover the Large image
 .setAssetsSmallImage('https://media.discordapp.net/attachments/1139564276042965164/1139629624268181535/untitled14.png?width=426&height=426') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('verified.') //Text when you hover the Small image
-    .addButton('Invite Flare To Your Server', 'https://discord.com/api/oauth2/authorize?client_id=1136380915564687421&permissions=8&scope=applications.commands%20bot/')
-    .addButton('Github', 'https://github.com/Fady-GadE/');
+    .addButton('Invite No one', 'https://discord.com/api/oauth2/authorize?client_id=1199302612357492746&permissions=0&scope=bot')
+    .addButton('Subscribe To My YT', 'https://www.youtube.com/channel/UCNyMQIrAVUW5lS3t72fkKqQ/');
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "online" }); //dnd, online, idle, offline
