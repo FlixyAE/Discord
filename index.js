@@ -30,8 +30,8 @@ client.on('ready', async () => {
     .setName('Flixy')
     .setDetails(`linktr.ee/flixy.ae`)
     .setStartTimestamp(Date.now())
-    .setAssetsLargeImage('https://imgur.com/wmX37CH') //You can put links in tenor or discord and etc.
-    .setAssetsLargeText('Flare logo.') //Text when you hover the Large image
+    .setAssetsLargeImage('https://tenor.com/view/shadow-the-hedgehog-edgy-moon-cross-arms-teleport-gif-4917223') //You can put links in tenor or discord and etc.
+    .setAssetsLargeText('FLIXY') //Text when you hover the Large image
 .setAssetsSmallImage('https://c.tenor.com/TgKK6YKNkm0AAAAi/verified-verificado.gif') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('verified.') //Text when you hover the Small image
     .addButton('Join My Discord Server', 'https://discord.gg/obiwan')
