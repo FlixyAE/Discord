@@ -44,7 +44,7 @@ client.on('ready', async () => {
   setInterval(() => {
     const newTime = formatTime();
     if (newTime !== prevTime) {
-      const newDetails = `Flare Discord Bot.`;
+      const newDetails = `linktr.ee/flixy.ae.`;
       r.setDetails(newDetails);
       client.user.setActivity(r);
       prevTime = newTime;
