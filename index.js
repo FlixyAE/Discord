@@ -10,7 +10,7 @@ keepAlive();
 function formatTime() { //Credits to himika#0001 and never#0001
   const date = new Date();
   const options = {
-    timeZone: 'GMT/UTC', //https://www.zeitverschiebung.net/en/ and find your city and enter here
+    timeZone: 'Europe/Madrid', //https://www.zeitverschiebung.net/en/ and find your city and enter here
     hour12: false,
     hour: 'numeric',
     minute: 'numeric'
