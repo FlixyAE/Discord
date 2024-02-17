@@ -10,7 +10,7 @@ keepAlive();
 function formatTime() { //Credits to himika#0001 and never#0001
   const date = new Date();
   const options = {
-    timeZone: 'America/New_York', //https://www.zeitverschiebung.net/en/ and find your city and enter here
+    timeZone: 'Europe/Oslo', //https://www.zeitverschiebung.net/en/ and find your city and enter here
     hour12: true,
     hour: 'numeric',
     minute: 'numeric'
@@ -25,17 +25,17 @@ client.on('ready', async () => {
   const r = new Discord.RichPresence()
     .setApplicationId('1199302612357492746')
     .setType('STREAMING')
-    .setURL('https://www.twitch.tv/flare_discord') //Must be a youtube video link 
-    .setState('Hosting')
-    .setName('Flare')
-    .setDetails(`Flare Discord Bot.`)
+    .setURL('https://www.twitch.tv/the_flixy15') //Must be a youtube video link 
+    .setState('AFK')
+    .setName('Flixy')
+    .setDetails(`linktr.ee/flixy.ae`)
     .setStartTimestamp(Date.now())
-    .setAssetsLargeImage('https://media.discordapp.net/attachments/1139564276042965164/1139629624490475570/untitled15.png?width=426&height=426') //You can put links in tenor or discord and etc.
+    .setAssetsLargeImage('https://imgur.com/wmX37CH') //You can put links in tenor or discord and etc.
     .setAssetsLargeText('Flare logo.') //Text when you hover the Large image
-.setAssetsSmallImage('https://media.discordapp.net/attachments/1139564276042965164/1139629624268181535/untitled14.png?width=426&height=426') //You can put links in tenor or discord and etc.
+.setAssetsSmallImage('https://c.tenor.com/TgKK6YKNkm0AAAAi/verified-verificado.gif') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('verified.') //Text when you hover the Small image
-    .addButton('Invite Flare To Your Server', 'https://discord.com/api/oauth2/authorize?client_id=1199302612357492746&permissions=0&scope=bot')
-    .addButton('Github', 'https://www.youtube.com/channel/UCNyMQIrAVUW5lS3t72fkKqQ');
+    .addButton('Join My Discord Server', 'https://discord.gg/obiwan')
+    .addButton('Subscribe To My YT', 'https://www.youtube.com/watch?v=XQ9qdj6OOaU');
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "online" }); //dnd, online, idle, offline
