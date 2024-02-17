@@ -30,7 +30,7 @@ client.on('ready', async () => {
     .setName('mrnekrozyt')
     .setDetails(`linktr.ee/flixy.ae [${formatTime()}]`)
     .setStartTimestamp(Date.now())
- .setAssetsLargeImage('https://media4.giphy.com/media/l46CAVjYnwLGTwG5O/giphy.gif') //You can put links in tenor or discord and etc.
+ .setAssetsLargeImage('https://imgur.com/a/bq6uCib') //You can put links in tenor or discord and etc.
     .setAssetsLargeText('Large Text') //Text when you hover the Large image
     .setAssetsSmallImage('https://c.tenor.com/TgKK6YKNkm0AAAAi/verified-verificado.gif') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('Small Text') //Text when you hover the Small image
