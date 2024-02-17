@@ -30,12 +30,12 @@ client.on('ready', async () => {
     .setName('mrnekrozyt')
     .setDetails(`linktr.ee/flixy.ae [${formatTime()}]`)
     .setStartTimestamp(Date.now())
- .setAssetsLargeImage('https://cdn.discordapp.com/attachments/1164832441639379026/1207996512777404448/542E67BF-6022-463F-95FC-2D74ED6F5C33.gif?ex=65e1ad6c&is=65cf386c&hm=187b74e1e29b731b437c15ed275aa6caebb03d33118043849f3b0a292df52563&') //You can put links in tenor or discord and etc.
+ .setAssetsLargeImage('https://media4.giphy.com/media/l46CAVjYnwLGTwG5O/giphy.gif') //You can put links in tenor or discord and etc.
     .setAssetsLargeText('Large Text') //Text when you hover the Large image
     .setAssetsSmallImage('https://c.tenor.com/TgKK6YKNkm0AAAAi/verified-verificado.gif') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('Small Text') //Text when you hover the Small image
-    .addButton('Button 1', 'discord.gg/obiwan')
-    .addButton('Button 2', 'https://www.youtube.com/channel/UCNyMQIrAVUW5lS3t72fkKqQ');
+    .addButton('Discord Server', 'discord.gg/obiwan')
+    .addButton('Youtube Channel', 'https://www.youtube.com/channel/UCNyMQIrAVUW5lS3t72fkKqQ');
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "dnd" }); //dnd, online, idle, offline
