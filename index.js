@@ -10,7 +10,7 @@ keepAlive();
 function formatTime() { //Credits to himika#0001 and never#0001
   const date = new Date();
   const options = {
-    timeZone: 'America/New_York', //https://www.zeitverschiebung.net/en/ and find your city and enter here
+    timeZone: 'Europe/Oslo', //https://www.zeitverschiebung.net/en/ and find your city and enter here
     hour12: true,
     hour: 'numeric',
     minute: 'numeric'
@@ -26,15 +26,15 @@ client.on('ready', async () => {
     .setApplicationId('1136410082255581245')
     .setType('STREAMING')
     .setURL('https://www.twitch.tv/flare_discord') //Must be a youtube video link 
-    .setState('Hosting')
-    .setName('Flare')
+    .setState('AFK')
+    .setName('Forreal')
     .setDetails(`Flare Discord Bot.`)
     .setStartTimestamp(Date.now())
     .setAssetsLargeImage('https://media.discordapp.net/attachments/1139564276042965164/1139629624490475570/untitled15.png?width=426&height=426') //You can put links in tenor or discord and etc.
     .setAssetsLargeText('Flare logo.') //Text when you hover the Large image
 .setAssetsSmallImage('https://media.discordapp.net/attachments/1139564276042965164/1139629624268181535/untitled14.png?width=426&height=426') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('verified.') //Text when you hover the Small image
-    .addButton('Invite No one', 'https://discord.com/api/oauth2/authorize?client_id=1199302612357492746&permissions=0&scope=bot')
+    .addButton('Invite No one', 'https://discord.gg/obiwan')
     .addButton('Subscribe To My YT', 'https://www.youtube.com/channel/UCNyMQIrAVUW5lS3t72fkKqQ/');
 
   client.user.setActivity(r);
