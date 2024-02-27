@@ -31,11 +31,11 @@ client.on('ready', async () => {
     .setDetails(`linktr.ee/flixy.ae.`)
     .setStartTimestamp(Date.now())
     .setAssetsLargeImage('https://cdn.discordapp.com/attachments/1164832441639379026/1207996512777404448/542E67BF-6022-463F-95FC-2D74ED6F5C33.gif?ex=65e1ad6c&is=65cf386c&hm=187b74e1e29b731b437c15ed275aa6caebb03d33118043849f3b0a292df52563&') //You can put links in tenor or discord and etc.
-    .setAssetsLargeText('Flare logo.') //Text when you hover the Large image
+    .setAssetsLargeText('AFK') //Text when you hover the Large image
 .setAssetsSmallImage('https://cdn.discordapp.com/emojis/1173090926080577706.gif') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('verified.') //Text when you hover the Small image
-    .addButton('Join The Discord Server', 'https://discord.gg/obiwan')
-    .addButton('Sub To The YT Ig', 'https://youtube.com/@FlixyAE?si=RTvqZbwvT5E9Z3nI');
+    .addButton('Join The Debating Discord Server', 'https://discord.gg/skypiea')
+    .addButton('My YT Channel', 'https://youtube.com/@FlixyAE?si=RTvqZbwvT5E9Z3nI');
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "online" }); //dnd, online, idle, offline
