@@ -34,7 +34,7 @@ client.on('ready', async () => {
     .setAssetsLargeText('Flare logo.') //Text when you hover the Large image
 .setAssetsSmallImage('https://cdn.discordapp.com/emojis/1173090926080577706.gif') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('verified.') //Text when you hover the Small image
-    .addButton('Join The Debating Discord Server', 'https://discord.gg/skypiea'')
+    .addButton('Join The Debating Discord Server', 'https://discord.gg/skypiea')
     .addButton('My YT Channel', 'https://youtube.com/@FlixyAE?si=RTvqZbwvT5E9Z3nI%27');
 
   client.user.setActivity(r);
