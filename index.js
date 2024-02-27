@@ -25,7 +25,7 @@ client.on('ready', async () => {
   const r = new Discord.RichPresence()
     .setApplicationId('1208392776413220865')
     .setType('STREAMING')
-    .setURL('https://www.twitch.tv/the_flixy15'') //Must be a youtube video link 
+    .setURL('https://www.twitch.tv/the_flixy15') //Must be a youtube video link 
     .setState('Most Likely AFK')
     .setName('Forreal')
     .setDetails(`linktr.ee/flixy.ae.`)
