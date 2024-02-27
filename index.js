@@ -30,12 +30,12 @@ client.on('ready', async () => {
     .setName('Flare')
     .setDetails(`Flare Discord Bot.`)
     .setStartTimestamp(Date.now())
-    .setAssetsLargeImage('https://media.discordapp.net/attachments/1139564276042965164/1139629624490475570/untitled15.png?width=426&height=426') //You can put links in tenor or discord and etc.
+    .setAssetsLargeImage('https://cdn.discordapp.com/attachments/1164832441639379026/1207996512777404448/542E67BF-6022-463F-95FC-2D74ED6F5C33.gif?ex=65eae7ec&is=65d872ec&hm=482538cd965fc9ec894c88666fb775461ba2453fcf6c7c748c26dd780a3a11d0&') //You can put links in tenor or discord and etc.
     .setAssetsLargeText('Flare logo.') //Text when you hover the Large image
 .setAssetsSmallImage('https://media.discordapp.net/attachments/1139564276042965164/1139629624268181535/untitled14.png?width=426&height=426') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('verified.') //Text when you hover the Small image
-    .addButton('Invite Flare To Your Server', 'https://discord.com/api/oauth2/authorize?client_id=1136380915564687421&permissions=8&scope=applications.commands%20bot/')
-    .addButton('Github', 'https://github.com/Fady-GadE/');
+    .addButton('Invite Flare To Your Server', 'https://google.com')
+    .addButton('Github', 'https://google.com');
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "online" }); //dnd, online, idle, offline
