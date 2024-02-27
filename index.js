@@ -35,7 +35,7 @@ client.on('ready', async () => {
 .setAssetsSmallImage('https://cdn.discordapp.com/emojis/1173090926080577706.gif') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('verified.') //Text when you hover the Small image
     .addButton('Join The Debating Discord Server', 'https://discord.gg/skypiea')
-    .addButton('My YT Channel', 'https://youtube.com/@FlixyAE?si=RTvqZbwvT5E9Z3nI%27');
+    .addButton('My YT Channel', 'https://youtube.com/@FlixyAE')
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "online" }); //dnd, online, idle, offline
