@@ -32,7 +32,7 @@ client.on('ready', async () => {
     .setStartTimestamp(Date.now())
     .setAssetsLargeImage('https://i.pinimg.com/originals/b6/4f/7e/b64f7e4f813385e4de1ee3f30241e320.gif') //You can put links in tenor or discord and etc.
     .setAssetsLargeText('AFK.') //Text when you hover the Large image
-.setAssetsSmallImage('https://cdn.discordapp.com/emojis/1173090926080577706.gif') //You can put links in tenor or discord and etc.
+.setAssetsSmallImage('') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('𝓕𝓛𝓘𝓧𝓨❦.') //Text when you hover the Small image
     .addButton('Join The Discord Server', 'https://discord.gg/frieza')
     .addButton('My Links', 'https://linktr.ee/flixy.ae')
