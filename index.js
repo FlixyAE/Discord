@@ -30,12 +30,12 @@ client.on('ready', async () => {
     .setName('Forreal')
     .setDetails(`linktr.ee/flixy.ae.`)
     .setStartTimestamp(Date.now())
-    .setAssetsLargeImage('https://cdn.discordapp.com/attachments/1164832441639379026/1207996512777404448/542E67BF-6022-463F-95FC-2D74ED6F5C33.gif?ex=65e1ad6c&is=65cf386c&hm=187b74e1e29b731b437c15ed275aa6caebb03d33118043849f3b0a292df52563&') //You can put links in tenor or discord and etc.
-    .setAssetsLargeText('Flare logo.') //Text when you hover the Large image
+    .setAssetsLargeImage('https://i.pinimg.com/originals/b6/4f/7e/b64f7e4f813385e4de1ee3f30241e320.gif') //You can put links in tenor or discord and etc.
+    .setAssetsLargeText('AFK.') //Text when you hover the Large image
 .setAssetsSmallImage('https://cdn.discordapp.com/emojis/1173090926080577706.gif') //You can put links in tenor or discord and etc.
-    .setAssetsSmallText('verified.') //Text when you hover the Small image
-    .addButton('Join The Debating Discord Server', 'https://discord.gg/skypiea')
-    .addButton('My YT Channel', 'https://youtube.com/@FlixyAE')
+    .setAssetsSmallText('𝓕𝓛𝓘𝓧𝓨❦.') //Text when you hover the Small image
+    .addButton('Join The Discord Server', 'https://discord.gg/frieza')
+    .addButton('My Links', 'https://linktr.ee/flixy.ae')
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "online" }); //dnd, online, idle, offline
