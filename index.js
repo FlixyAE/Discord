@@ -23,7 +23,7 @@ client.on('ready', async () => {
   console.log(`${client.user.tag} - rich presence started!`);
 
   const r = new Discord.RichPresence()
-    .setApplicationId('1208392776413220865')
+    .setApplicationId('1253738152166690866')
     .setType('STREAMING')
     .setURL('https://www.twitch.tv/flixy_14') //Must be a youtube video link 
     .setState('AFK')
@@ -31,11 +31,11 @@ client.on('ready', async () => {
     .setDetails(`linktr.ee/flixy.ae`)
     .setStartTimestamp(Date.now())
     .setAssetsLargeImage('https://media1.giphy.com/media/I6wUi5eTdUCWI/giphy.gif') //You can put links in tenor or discord and etc.
-    .setAssetsLargeText('Forreal.') //Text when you hover the Large image
+    .setAssetsLargeText('NITRO.') //Text when you hover the Large image
   .setAssetsSmallImage('https://media1.giphy.com/media/D6aoDE0OSYiYojubBW/giphy.gif?cid=6c09b952joz86vbpk26r0wnvpq9vbbb481l49inc8yz9veyl&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s) //You can put links in tenor or discord and etc.
       .setAssetsSmallText('verified.') //Text when you hover the Small image
-      .addButton('My Links', 'https://linktr.ee/flixy.ae')
-      .addButton('gg/frieza', 'https://discord.gg/frieza');
+      .addButton('My links', 'https://linktr.ee/flixy.ae')
+      .addButton('nitro giveaway', 'https://discord.gg/hers');
 
     client.user.setActivity(r);
     client.user.setPresence({ status: "online" }); //dnd, online, idle, offline
