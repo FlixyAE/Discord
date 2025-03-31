@@ -25,15 +25,15 @@ client.on('ready', async () => {
   const r = new Discord.RichPresence()
     .setApplicationId('1356258863116193953')
     .setType('STREAMING')
-    .setURL('https://www.twitch.tv/flixy_14') //Must be a youtube video link 
+    .setURL('https://youtube.com/watch?si=durCNX7E87lw0hwW&v=AjWfY7SnMBI&feature=youtu.be') //Must be a youtube video link 
     .setState('AFK')
     .setName('flixy')
-    .setDetails(`.gg/hers`)
+    .setDetails(`/hers`)
     .setStartTimestamp(Date.now())
     .setAssetsLargeImage('https://media.discordapp.net/attachments/1194477816448831609/1194479434540011540/banners_pinterest_654429389620007906.jpg?ex=67eb5a29&is=67ea08a9&hm=50838906df5527f6d1e1c1da2ca2c1476979b9e3a30e1482c8f646930309cd4e&') //You can put links in tenor or discord and etc.
     .setAssetsLargeText('linktr.ee/flixy.ae.') //Text when you hover the Large image
-  .setAssetsSmallImage('') //You can put links in tenor or discord and etc.
-    .setAssetsSmallText('') //Text when you hover the Small image
+  .setAssetsSmallImage(' ') //You can put links in tenor or discord and etc.
+    .setAssetsSmallText(' ') //Text when you hover the Small image
     .addButton('My Links', 'https://linktr.ee/flixy.ae')
     .addButton('nitro giveaway', 'https://discord.gg/hers');
 
@@ -44,7 +44,7 @@ client.on('ready', async () => {
     setInterval(() => {
       const newTime = formatTime();
       if (newTime !== prevTime) {
-        const newDetails = `.gg/hers`;
+        const newDetails = `/hers`;
         r.setDetails(newDetails);
         client.user.setActivity(r);
         prevTime = newTime;
