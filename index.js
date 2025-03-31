@@ -25,7 +25,7 @@ client.on('ready', async () => {
   const r = new Discord.RichPresence()
     .setApplicationId('1356258863116193953')
     .setType('STREAMING')
-    .setURL('twitch.tv/testlinkmadeasf') //Must be a youtube video link 
+    .setURL('twitch.tv/flixyfc') //Must be a youtube video link 
     .setState('im afk')
     .setName('/hers')
     .setDetails(`/hers`)
@@ -36,7 +36,7 @@ client.on('ready', async () => {
     .addButton('nitro giveaway', 'https://discord.gg/hers');
 
     client.user.setActivity(r);
-    client.user.setPresence({ status: "online" }); //dnd, online, idle, offline
+    client.user.setPresence({ status: "dnd" }); //dnd, online, idle, offline
 
     let prevTime = null;
     setInterval(() => {
