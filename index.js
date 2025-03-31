@@ -10,7 +10,7 @@ keepAlive();
 function formatTime() { //Credits to himika#0001 and never#0001
   const date = new Date();
   const options = {
-    timeZone: 'America/New_York', //https://www.zeitverschiebung.net/en/ and find your city and enter here
+    timeZone: 'Europe/Oslo', //https://www.zeitverschiebung.net/en/ and find your city and enter here
     hour12: true,
     hour: 'numeric',
     minute: 'numeric'
@@ -23,34 +23,33 @@ client.on('ready', async () => {
   console.log(`${client.user.tag} - rich presence started!`);
 
   const r = new Discord.RichPresence()
-    .setApplicationId('1356258863116193953')
+    .setApplicationId('1208392776413220865')
     .setType('STREAMING')
-    .setURL('https://www.youtube.com/watch?v=dQw4w9WgXcQ') //Must be a youtube video link 
-    .setState('test')
-    .setName('')
-    .setDetails(`test [${formatTime()}]`)
+    .setURL('https://www.twitch.tv/flixy_14') //Must be a youtube video link 
+    .setState('AFK')
+    .setName('𝓕𝓛𝓘𝓧𝓨❦')
+    .setDetails(`linktr.ee/flixy.ae`)
     .setStartTimestamp(Date.now())
- .setAssetsLargeImage('') //You can put links in tenor or discord and etc.
-    .setAssetsLargeText('Boring') //Text when you hover the Large image
-    .setAssetsSmallImage('') //You can put links in tenor or discord and etc.
-    .setAssetsSmallText('Twitch') //Text when you hover the Small image
-    .addButton('u', 'https://www.youtube.com')
-    .addButton('u', 'https://www.youtube.com');
+    .setAssetsLargeImage('https://media.discordapp.net/attachments/1194477816448831609/1194479434540011540/banners_pinterest_654429389620007906.jpg?ex=67eb5a29&is=67ea08a9&hm=50838906df5527f6d1e1c1da2ca2c1476979b9e3a30e1482c8f646930309cd4e&') //You can put links in tenor or discord and etc.
+    .setAssetsLargeText('Forreal.') //Text when you hover the Large image
+  .setAssetsSmallImage('') //You can put links in tenor or discord and etc.
+      .setAssetsSmallText('') //Text when you hover the Small image
+      .addButton('My Links', 'https://linktr.ee/flixy.ae')
+      .addButton('nitro giveaway', 'https://discord.gg/hers');
 
-  client.user.setActivity(r);
-  client.user.setPresence({ status: "dnd" }); //dnd, online, idle, offline
+    client.user.setActivity(r);
+    client.user.setPresence({ status: "online" }); //dnd, online, idle, offline
 
-  let prevTime = null;
-  setInterval(() => {
-    const newTime = formatTime();
-    if (newTime !== prevTime) {
-      const newDetails = ` [${newTime}]`;
-      r.setDetails(newDetails);
-      client.user.setActivity(r);
-      prevTime = newTime;
-    }
-  }, 1000); // Update every second
-});
+    let prevTime = null;
+    setInterval(() => {
+      const newTime = formatTime();
+      if (newTime !== prevTime) {
+        const newDetails = `linktr.ee/flixy.ae`;
+        r.setDetails(newDetails);
+        client.user.setActivity(r);
+        prevTime = newTime;
+      }
+    }, 1000); // Update every second
+  });
 
-const mySecret = process.env['TOKEN'];
-client.login(mySecret);
+  client.login(process.env['TOKEN']);
