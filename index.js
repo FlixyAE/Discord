@@ -25,7 +25,7 @@ client.on('ready', async () => {
   const r = new Discord.RichPresence()
     .setApplicationId('1356258863116193953')
     .setType('STREAMING')
-    .setURL('twitch.tv/flixyfc') //Must be a youtube video link 
+    .setURL('twitch.tv/flixyyfc') //Must be a youtube video link 
     .setState('im afk')
     .setName('/hers')
     .setDetails(`/hers`)
