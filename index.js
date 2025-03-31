@@ -23,7 +23,7 @@ client.on('ready', async () => {
   console.log(`${client.user.tag} - rich presence started!`);
 
   const r = new Discord.RichPresence()
-    .setApplicationId('1208392776413220865')
+    .setApplicationId('1253738152166690866')
     .setType('STREAMING')
     .setURL('https://www.twitch.tv/flixy_14') //Must be a youtube video link 
     .setState('AFK')
