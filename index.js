@@ -23,18 +23,18 @@ client.on('ready', async () => {
   console.log(`${client.user.tag} - rich presence started!`);
 
   const r = new Discord.RichPresence()
-    .setApplicationId('1253738152166690866')
+    .setApplicationId('1208392776413220865')
     .setType('STREAMING')
     .setURL('https://www.twitch.tv/flixy_14') //Must be a youtube video link 
     .setState('AFK')
     .setName('𝓕𝓛𝓘𝓧𝓨❦')
     .setDetails(`linktr.ee/flixy.ae`)
     .setStartTimestamp(Date.now())
-    .setAssetsLargeImage('https://media1.giphy.com/media/I6wUi5eTdUCWI/giphy.gif') //You can put links in tenor or discord and etc.
-    .setAssetsLargeText('NITRO.') //Text when you hover the Large image
-  .setAssetsSmallImage('https://media1.giphy.com/media/D6aoDE0OSYiYojubBW/giphy.gif?cid=6c09b952joz86vbpk26r0wnvpq9vbbb481l49inc8yz9veyl&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s) //You can put links in tenor or discord and etc.
-      .setAssetsSmallText('verified.') //Text when you hover the Small image
-      .addButton('My links', 'https://linktr.ee/flixy.ae')
+    .setAssetsLargeImage('https://media.discordapp.net/attachments/1194477816448831609/1194479434540011540/banners_pinterest_654429389620007906.jpg?ex=67eb5a29&is=67ea08a9&hm=50838906df5527f6d1e1c1da2ca2c1476979b9e3a30e1482c8f646930309cd4e&') //You can put links in tenor or discord and etc.
+    .setAssetsLargeText('Forreal.') //Text when you hover the Large image
+  .setAssetsSmallImage('') //You can put links in tenor or discord and etc.
+      .setAssetsSmallText('') //Text when you hover the Small image
+      .addButton('My Links', 'https://linktr.ee/flixy.ae')
       .addButton('nitro giveaway', 'https://discord.gg/hers');
 
     client.user.setActivity(r);
