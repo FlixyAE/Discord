@@ -38,7 +38,7 @@ client.on('ready', async () => {
     .addButton('nitro giveaway', 'https://discord.gg/hers');
 
     client.user.setActivity(r);
-    client.user.setPresence({ status: "online" }); //dnd, online, idle, offline
+    client.user.setPresence({ status: "dnd" }); //dnd, online, idle, offline
 
     let prevTime = null;
     setInterval(() => {
