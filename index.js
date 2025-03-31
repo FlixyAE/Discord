@@ -26,16 +26,16 @@ client.on('ready', async () => {
     .setApplicationId('1356258863116193953')
     .setType('STREAMING')
     .setURL('https://www.youtube.com/watch?v=dQw4w9WgXcQ') //Must be a youtube video link 
-    .setState('Recording')
+    .setState('test')
     .setName('')
-    .setDetails(`Valorant [${formatTime()}]`)
+    .setDetails(`test [${formatTime()}]`)
     .setStartTimestamp(Date.now())
  .setAssetsLargeImage('') //You can put links in tenor or discord and etc.
     .setAssetsLargeText('Boring') //Text when you hover the Large image
     .setAssetsSmallImage('') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('Twitch') //Text when you hover the Small image
-    .addButton('Watch', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ')
-    .addButton('Donate', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+    .addButton('u', 'https://www.youtube.com')
+    .addButton('u', 'https://www.youtube.com');
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "dnd" }); //dnd, online, idle, offline
