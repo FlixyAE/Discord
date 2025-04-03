@@ -7,47 +7,94 @@ const client = new Discord.Client({
 const keepAlive = require('./server.js');
 keepAlive();
 
-function formatTime() { //Credits to himika#0001 and never#0001
+// Function to format the time (using Europe/Oslo timezone)
+function formatTime() { 
   const date = new Date();
   const options = {
-    timeZone: 'Europe/Oslo', //https://www.zeitverschiebung.net/en/ and find your city and enter here
-    hour12: true,
+    timeZone: 'Europe/Oslo', // Your local timezone
+    hour12: false,
     hour: 'numeric',
-    minute: 'numeric'
+    minute: 'numeric',
+    second: 'numeric' // Show seconds as well
   };
   return new Intl.DateTimeFormat('en-US', options).format(date);
 }
+
+// Configurations (Config 1 & Config 2) - Do not change anything here
+const config1 = {
+  streamURL: "https://twitch.tv/twitch",
+  state: 'join for nitro gw',
+  details: '/hers',
+  largeImage: 'https://cdn.discordapp.com/attachments/1194477816448831609/1194479107443003452/banners_pinterest_654429389619273739.jpg?ex=67eb59db&is=67ea085b&hm=491166f8b09a3afc62af093cb59ef66fe2fe8fcdebe21fcc9f7d7fb32f33dd6c&',
+  smallImage: '',
+  smallText: 'Small Text',
+  button1: ['nitro giveaway', 'https://discord.gg/hers'],
+  button2: ['join server', 'https://discord.gg/hers']
+};
+
+const config2 = {
+  streamURL: "https://twitch.tv/twitch",
+  state: 'asleep or afk',
+  details: '/hers [AFK]',
+  largeImage: 'https://cdn.discordapp.com/attachments/1194477816448831609/1194479107443003452/banners_pinterest_654429389619273739.jpg?ex=67eb59db&is=67ea085b&hm=491166f8b09a3afc62af093cb59ef66fe2fe8fcdebe21fcc9f7d7fb32f33dd6c&',
+  smallImage: '',
+  smallText: 'Small Text',
+  button1: ['nitro giveaway', 'https://discord.gg/hers'],
+  button2: ['join server', 'https://discord.gg/hers']
+};
+
+// Default config
+let currentConfig = config1;
 
 client.on('ready', async () => {
   console.clear();
   console.log(`${client.user.tag} - rich presence started!`);
 
   const r = new Discord.RichPresence()
-    .setApplicationId('1356258863116193953')
+    .setApplicationId('1253738152166690866')
     .setType('STREAMING')
-    .setURL('https://twitch.tv/flixyyfc') //Must be a youtube video link 
-    .setState('im afk')
-    .setName('/hers')
-    .setDetails(`/hers`)
+    .setURL(currentConfig.streamURL)
+    .setState(currentConfig.state)
+    .setName('flixy')
+    .setDetails(currentConfig.details) // Initial details set
     .setStartTimestamp(Date.now())
-  .setAssetsLargeImage('https://media.discordapp.net/attachments/1194477816448831609/1194479434540011540/banners_pinterest_654429389620007906.jpg?ex=67eb5a29&is=67ea08a9&hm=50838906df5527f6d1e1c1da2ca2c1476979b9e3a30e1482c8f646930309cd4e&') //You can put links in tenor or discord and etc.
-    .setAssetsLargeText('linktr.ee/flixy.ae.') //Text when you hover the Large image
-    .addButton('My Links', 'https://linktr.ee/flixy.ae')
-    .addButton('nitro giveaway', 'https://discord.gg/hers');
+    .setAssetsLargeImage(currentConfig.largeImage)
+    .setAssetsLargeText('')
+    .setAssetsSmallImage(currentConfig.smallImage)
+    .setAssetsSmallText(currentConfig.smallText)
+    .addButton(currentConfig.button1[0], currentConfig.button1[1])
+    .addButton(currentConfig.button2[0], currentConfig.button2[1]);
 
-    client.user.setActivity(r);
-    client.user.setPresence({ status: "dnd" }); //dnd, online, idle, offline
+  client.user.setActivity(r);
+  client.user.setPresence({ status: "dnd" }); // dnd, online, idle, offline
 
-    let prevTime = null;
-    setInterval(() => {
-      const newTime = formatTime();
-      if (newTime !== prevTime) {
-        const newDetails = `/hers`;
-        r.setDetails(newDetails);
-        client.user.setActivity(r);
-        prevTime = newTime;
-      }
-    }, 1000); // Update every second
-  });
+  let prevTime = null;
+  setInterval(() => {
+    const newTime = formatTime(); // Get formatted time in Europe/Oslo timezone
+    if (newTime !== prevTime) {
+      // Dynamically update the `details` to show current time
+      const newDetails = `${currentConfig.details} | Current time: ${newTime}`; 
+      r.setDetails(newDetails); // Update details with the current time
+      client.user.setActivity(r); // Set activity with updated details
+      prevTime = newTime; // Store the last time
+    }
+  }, 1000); // Update every second
+});
 
-  client.login(process.env['TOKEN']);
+// Command to switch config
+client.on('messageCreate', (message) => {
+  if (message.author.bot) return;
+
+  if (message.content === '!config 1') {
+    currentConfig = config1;
+    message.reply("Switched to config 1.");
+  }
+
+  if (message.content === '!config 2') {
+    currentConfig = config2;
+    message.reply("Switched to config 2.");
+  }
+});
+
+const mySecret = process.env['TOKEN'];
+client.login(mySecret);
